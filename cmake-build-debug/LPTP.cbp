@@ -82,6 +82,12 @@
 		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/equipment.h">
 			<Option target="LPTP"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/input.c">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/input.h">
+			<Option target="LPTP"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/main.c">
 			<Option target="LPTP"/>
 		</Unit>

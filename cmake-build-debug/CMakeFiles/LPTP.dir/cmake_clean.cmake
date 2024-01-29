@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LPTP.dir/equipment.c.o"
   "CMakeFiles/LPTP.dir/equipment.c.o.d"
+  "CMakeFiles/LPTP.dir/input.c.o"
+  "CMakeFiles/LPTP.dir/input.c.o.d"
   "CMakeFiles/LPTP.dir/main.c.o"
   "CMakeFiles/LPTP.dir/main.c.o.d"
   "LPTP"
