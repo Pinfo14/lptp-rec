@@ -76,19 +76,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/equipment.c">
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/equipment.c">
 			<Option target="LPTP"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/equipment.h">
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/equipment.h">
 			<Option target="LPTP"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/input.c">
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/files.c">
 			<Option target="LPTP"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/input.h">
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/files.h">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/input.c">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/input.h">
 			<Option target="LPTP"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/main.c">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/memory.c">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/memory.h">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/menu.c">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/menu.h">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/user.c">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/user.h">
 			<Option target="LPTP"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/CMakeLists.txt">

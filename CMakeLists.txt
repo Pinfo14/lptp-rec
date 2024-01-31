@@ -4,7 +4,15 @@ project(LPTP C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(LPTP main.c
-        cmake-build-debug/equipment.c
-        cmake-build-debug/equipment.hs
-        cmake-build-debug/input.c
-        cmake-build-debug/input.h)
+        equipment.h
+        equipment.c
+        input.h
+        input.c
+        menu.c
+        menu.h
+        files.c
+        files.h
+        user.c
+        user.h
+        memory.c
+        memory.h)

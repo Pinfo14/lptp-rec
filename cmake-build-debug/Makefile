@@ -153,6 +153,30 @@ equipment.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/equipment.c.s
 .PHONY : equipment.c.s
 
+files.o: files.c.o
+.PHONY : files.o
+
+# target to build an object file
+files.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/files.c.o
+.PHONY : files.c.o
+
+files.i: files.c.i
+.PHONY : files.i
+
+# target to preprocess a source file
+files.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/files.c.i
+.PHONY : files.c.i
+
+files.s: files.c.s
+.PHONY : files.s
+
+# target to generate assembly for a file
+files.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/files.c.s
+.PHONY : files.c.s
+
 input.o: input.c.o
 .PHONY : input.o
 
@@ -201,6 +225,78 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/main.c.s
 .PHONY : main.c.s
 
+memory.o: memory.c.o
+.PHONY : memory.o
+
+# target to build an object file
+memory.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/memory.c.o
+.PHONY : memory.c.o
+
+memory.i: memory.c.i
+.PHONY : memory.i
+
+# target to preprocess a source file
+memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/memory.c.i
+.PHONY : memory.c.i
+
+memory.s: memory.c.s
+.PHONY : memory.s
+
+# target to generate assembly for a file
+memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/memory.c.s
+.PHONY : memory.c.s
+
+menu.o: menu.c.o
+.PHONY : menu.o
+
+# target to build an object file
+menu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/menu.c.o
+.PHONY : menu.c.o
+
+menu.i: menu.c.i
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/menu.c.i
+.PHONY : menu.c.i
+
+menu.s: menu.c.s
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/menu.c.s
+.PHONY : menu.c.s
+
+user.o: user.c.o
+.PHONY : user.o
+
+# target to build an object file
+user.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/user.c.o
+.PHONY : user.c.o
+
+user.i: user.c.i
+.PHONY : user.i
+
+# target to preprocess a source file
+user.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/user.c.i
+.PHONY : user.c.i
+
+user.s: user.c.s
+.PHONY : user.s
+
+# target to generate assembly for a file
+user.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/user.c.s
+.PHONY : user.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,12 +309,24 @@ help:
 	@echo "... equipment.o"
 	@echo "... equipment.i"
 	@echo "... equipment.s"
+	@echo "... files.o"
+	@echo "... files.i"
+	@echo "... files.s"
 	@echo "... input.o"
 	@echo "... input.i"
 	@echo "... input.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... memory.o"
+	@echo "... memory.i"
+	@echo "... memory.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
+	@echo "... user.o"
+	@echo "... user.i"
+	@echo "... user.s"
 .PHONY : help
 
 

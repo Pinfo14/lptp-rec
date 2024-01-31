@@ -84,38 +84,98 @@ CMakeFiles/LPTP.dir/main.c.s: cmake_force
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/emanu/Desktop/LPTP/main.c -o CMakeFiles/LPTP.dir/main.c.s
 
 CMakeFiles/LPTP.dir/equipment.c.o: CMakeFiles/LPTP.dir/flags.make
-CMakeFiles/LPTP.dir/equipment.c.o: equipment.c
+CMakeFiles/LPTP.dir/equipment.c.o: ../equipment.c
 CMakeFiles/LPTP.dir/equipment.c.o: CMakeFiles/LPTP.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LPTP.dir/equipment.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LPTP.dir/equipment.c.o -MF CMakeFiles/LPTP.dir/equipment.c.o.d -o CMakeFiles/LPTP.dir/equipment.c.o -c /mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/equipment.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LPTP.dir/equipment.c.o -MF CMakeFiles/LPTP.dir/equipment.c.o.d -o CMakeFiles/LPTP.dir/equipment.c.o -c /mnt/c/Users/emanu/Desktop/LPTP/equipment.c
 
 CMakeFiles/LPTP.dir/equipment.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LPTP.dir/equipment.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/equipment.c > CMakeFiles/LPTP.dir/equipment.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/emanu/Desktop/LPTP/equipment.c > CMakeFiles/LPTP.dir/equipment.c.i
 
 CMakeFiles/LPTP.dir/equipment.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LPTP.dir/equipment.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/equipment.c -o CMakeFiles/LPTP.dir/equipment.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/emanu/Desktop/LPTP/equipment.c -o CMakeFiles/LPTP.dir/equipment.c.s
 
 CMakeFiles/LPTP.dir/input.c.o: CMakeFiles/LPTP.dir/flags.make
-CMakeFiles/LPTP.dir/input.c.o: input.c
+CMakeFiles/LPTP.dir/input.c.o: ../input.c
 CMakeFiles/LPTP.dir/input.c.o: CMakeFiles/LPTP.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LPTP.dir/input.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LPTP.dir/input.c.o -MF CMakeFiles/LPTP.dir/input.c.o.d -o CMakeFiles/LPTP.dir/input.c.o -c /mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/input.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LPTP.dir/input.c.o -MF CMakeFiles/LPTP.dir/input.c.o.d -o CMakeFiles/LPTP.dir/input.c.o -c /mnt/c/Users/emanu/Desktop/LPTP/input.c
 
 CMakeFiles/LPTP.dir/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LPTP.dir/input.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/input.c > CMakeFiles/LPTP.dir/input.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/emanu/Desktop/LPTP/input.c > CMakeFiles/LPTP.dir/input.c.i
 
 CMakeFiles/LPTP.dir/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LPTP.dir/input.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/input.c -o CMakeFiles/LPTP.dir/input.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/emanu/Desktop/LPTP/input.c -o CMakeFiles/LPTP.dir/input.c.s
+
+CMakeFiles/LPTP.dir/menu.c.o: CMakeFiles/LPTP.dir/flags.make
+CMakeFiles/LPTP.dir/menu.c.o: ../menu.c
+CMakeFiles/LPTP.dir/menu.c.o: CMakeFiles/LPTP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LPTP.dir/menu.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LPTP.dir/menu.c.o -MF CMakeFiles/LPTP.dir/menu.c.o.d -o CMakeFiles/LPTP.dir/menu.c.o -c /mnt/c/Users/emanu/Desktop/LPTP/menu.c
+
+CMakeFiles/LPTP.dir/menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LPTP.dir/menu.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/emanu/Desktop/LPTP/menu.c > CMakeFiles/LPTP.dir/menu.c.i
+
+CMakeFiles/LPTP.dir/menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LPTP.dir/menu.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/emanu/Desktop/LPTP/menu.c -o CMakeFiles/LPTP.dir/menu.c.s
+
+CMakeFiles/LPTP.dir/files.c.o: CMakeFiles/LPTP.dir/flags.make
+CMakeFiles/LPTP.dir/files.c.o: ../files.c
+CMakeFiles/LPTP.dir/files.c.o: CMakeFiles/LPTP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/LPTP.dir/files.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LPTP.dir/files.c.o -MF CMakeFiles/LPTP.dir/files.c.o.d -o CMakeFiles/LPTP.dir/files.c.o -c /mnt/c/Users/emanu/Desktop/LPTP/files.c
+
+CMakeFiles/LPTP.dir/files.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LPTP.dir/files.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/emanu/Desktop/LPTP/files.c > CMakeFiles/LPTP.dir/files.c.i
+
+CMakeFiles/LPTP.dir/files.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LPTP.dir/files.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/emanu/Desktop/LPTP/files.c -o CMakeFiles/LPTP.dir/files.c.s
+
+CMakeFiles/LPTP.dir/user.c.o: CMakeFiles/LPTP.dir/flags.make
+CMakeFiles/LPTP.dir/user.c.o: ../user.c
+CMakeFiles/LPTP.dir/user.c.o: CMakeFiles/LPTP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/LPTP.dir/user.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LPTP.dir/user.c.o -MF CMakeFiles/LPTP.dir/user.c.o.d -o CMakeFiles/LPTP.dir/user.c.o -c /mnt/c/Users/emanu/Desktop/LPTP/user.c
+
+CMakeFiles/LPTP.dir/user.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LPTP.dir/user.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/emanu/Desktop/LPTP/user.c > CMakeFiles/LPTP.dir/user.c.i
+
+CMakeFiles/LPTP.dir/user.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LPTP.dir/user.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/emanu/Desktop/LPTP/user.c -o CMakeFiles/LPTP.dir/user.c.s
+
+CMakeFiles/LPTP.dir/memory.c.o: CMakeFiles/LPTP.dir/flags.make
+CMakeFiles/LPTP.dir/memory.c.o: ../memory.c
+CMakeFiles/LPTP.dir/memory.c.o: CMakeFiles/LPTP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/LPTP.dir/memory.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LPTP.dir/memory.c.o -MF CMakeFiles/LPTP.dir/memory.c.o.d -o CMakeFiles/LPTP.dir/memory.c.o -c /mnt/c/Users/emanu/Desktop/LPTP/memory.c
+
+CMakeFiles/LPTP.dir/memory.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LPTP.dir/memory.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/emanu/Desktop/LPTP/memory.c > CMakeFiles/LPTP.dir/memory.c.i
+
+CMakeFiles/LPTP.dir/memory.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LPTP.dir/memory.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/emanu/Desktop/LPTP/memory.c -o CMakeFiles/LPTP.dir/memory.c.s
 
 # Object files for target LPTP
 LPTP_OBJECTS = \
 "CMakeFiles/LPTP.dir/main.c.o" \
 "CMakeFiles/LPTP.dir/equipment.c.o" \
-"CMakeFiles/LPTP.dir/input.c.o"
+"CMakeFiles/LPTP.dir/input.c.o" \
+"CMakeFiles/LPTP.dir/menu.c.o" \
+"CMakeFiles/LPTP.dir/files.c.o" \
+"CMakeFiles/LPTP.dir/user.c.o" \
+"CMakeFiles/LPTP.dir/memory.c.o"
 
 # External object files for target LPTP
 LPTP_EXTERNAL_OBJECTS =
@@ -123,9 +183,13 @@ LPTP_EXTERNAL_OBJECTS =
 LPTP: CMakeFiles/LPTP.dir/main.c.o
 LPTP: CMakeFiles/LPTP.dir/equipment.c.o
 LPTP: CMakeFiles/LPTP.dir/input.c.o
+LPTP: CMakeFiles/LPTP.dir/menu.c.o
+LPTP: CMakeFiles/LPTP.dir/files.c.o
+LPTP: CMakeFiles/LPTP.dir/user.c.o
+LPTP: CMakeFiles/LPTP.dir/memory.c.o
 LPTP: CMakeFiles/LPTP.dir/build.make
 LPTP: CMakeFiles/LPTP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable LPTP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/emanu/Desktop/LPTP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable LPTP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LPTP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

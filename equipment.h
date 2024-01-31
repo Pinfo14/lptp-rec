@@ -3,7 +3,6 @@
 //
 
 #ifndef LPTP_EQUIPMENT_H
-#ifndef LPTP_EQUIPMENT_H
 #define LPTP_EQUIPMENT_H
 #define  MAX_CHAR 100
 #define  MAX_NOTES 1000
@@ -30,11 +29,17 @@ typedef struct {
 }Date;
 
 typedef struct {
-   int id;
+   int num_movement;
    Date date;
    CatgMaintenance category;
    char notes[MAX_NOTES];
 }Maintenance;
+
+typedef struct {
+    int count;
+    int allocatedCells;
+    Maintenance *maintenance;
+}Maintenances;
 
 typedef struct {
     int id;
@@ -44,14 +49,19 @@ typedef struct {
     State state;
     int userCode;
     Maintenance *maintenance;
+    int num_maintenance;
 }Equipment;
 
 typedef struct {
     int count;
-    Equipment *equipment
+    int allocatedCells;
+    Equipment *equipment;
 }Equipments;
 
 
 void insertEquipments(Equipments *equipments);
+void updateState(Equipments *equipments);
 void listEquipment(Equipments equipments);
+void insertMaintenance(Equipments *equipments, Maintenances *maintenances);
+
 #endif //LPTP_EQUIPMENT_H

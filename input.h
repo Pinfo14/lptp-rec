@@ -4,7 +4,7 @@
 
 #ifndef LPTP_INPUT_H
 #define LPTP_INPUT_H
-
+void cleanInputBuffer();
 int getInt(int minValue, int maxValue, char *msg);
 void readString(char *string, unsigned int size, char *msg);
 #endif //LPTP_INPUT_H
