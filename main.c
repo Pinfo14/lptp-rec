@@ -5,19 +5,21 @@
 #include "files.h"
 int main() {
 
-    Equipments equipments ;//={.count = 0};
-    Maintenances maintenance; //={.count = 0};
+    Equipments equipments={.count = 0};
+    Users users={.count = 0};
 
 //     loadFile( &equipments);
   //  importEquipment(&equipments,&maintenance);
-
   loadEquipment(&equipments);
-  loadMaintenance(&maintenance);
-    mainMenu(equipments, maintenance);
+    loadUser(&users);
+ // loadMaintenance(&maintenance);
+    mainMenu(equipments,users);
 
    // exportEquipments(&equipments,&maintenance);
   saveEquipments(&equipments);
-    saveMaintenance(&maintenance);
+    saveUser(&users);
+  //
+  //  saveMaintenance(&maintenance);
     //free( equipments->equipment->maintenance);
    // free(  equipments->equipment);
     //free(equipments);

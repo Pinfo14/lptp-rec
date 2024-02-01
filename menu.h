@@ -5,7 +5,8 @@
 #ifndef LPTP_MENU_H
 #define LPTP_MENU_H
 #include "equipment.h"
+#include "user.h"
 
-void mainMenu(Equipments equipments, Maintenances maintenances);
-void managmentMenu(Equipments equipments,Maintenances maintenances);
+void  mainMenu(Equipments equipments,Users users);
+void equipmentManagmentMenu(Equipments equipments);
 #endif //LPTP_MENU_H

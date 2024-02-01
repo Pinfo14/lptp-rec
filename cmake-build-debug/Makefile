@@ -201,6 +201,30 @@ input.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/input.c.s
 .PHONY : input.c.s
 
+list.o: list.c.o
+.PHONY : list.o
+
+# target to build an object file
+list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/list.c.o
+.PHONY : list.c.o
+
+list.i: list.c.i
+.PHONY : list.i
+
+# target to preprocess a source file
+list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/list.c.i
+.PHONY : list.c.i
+
+list.s: list.c.s
+.PHONY : list.s
+
+# target to generate assembly for a file
+list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/list.c.s
+.PHONY : list.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -273,6 +297,30 @@ menu.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/menu.c.s
 .PHONY : menu.c.s
 
+search.o: search.c.o
+.PHONY : search.o
+
+# target to build an object file
+search.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/search.c.o
+.PHONY : search.c.o
+
+search.i: search.c.i
+.PHONY : search.i
+
+# target to preprocess a source file
+search.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/search.c.i
+.PHONY : search.c.i
+
+search.s: search.c.s
+.PHONY : search.s
+
+# target to generate assembly for a file
+search.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LPTP.dir/build.make CMakeFiles/LPTP.dir/search.c.s
+.PHONY : search.c.s
+
 user.o: user.c.o
 .PHONY : user.o
 
@@ -315,6 +363,9 @@ help:
 	@echo "... input.o"
 	@echo "... input.i"
 	@echo "... input.s"
+	@echo "... list.o"
+	@echo "... list.i"
+	@echo "... list.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -324,6 +375,9 @@ help:
 	@echo "... menu.o"
 	@echo "... menu.i"
 	@echo "... menu.s"
+	@echo "... search.o"
+	@echo "... search.i"
+	@echo "... search.s"
 	@echo "... user.o"
 	@echo "... user.i"
 	@echo "... user.s"

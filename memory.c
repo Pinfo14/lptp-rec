@@ -8,21 +8,27 @@
 #include "stdlib.h"
 #include "stdio.h"
 
-void initAllocEquipment(Equipments * equipments, int size) {
-    if ((equipments->equipment = (Equipment *)malloc(size * sizeof(Equipment))) == NULL) {
-        printf("feile");
+void initAllocEquipment(Equipments *equipments, int size) {
+    equipments->equipment = (Equipment *)malloc(size * sizeof(Equipment));
+    if (equipments->equipment == NULL) {
+        fprintf(stderr, "Memory allocation error for equipment\n");
         exit(EXIT_FAILURE);
     }
-    equipments->count = size;
+
+    for (int i = 0; i < size; ++i) {
+        equipments->equipment[i].maintenance = (Maintenance *)malloc(size * sizeof(Maintenance));
+        if (equipments->equipment[i].maintenance == NULL) {
+            fprintf(stderr, "Memory allocation error for maintenance records\n");
+            exit(EXIT_FAILURE);
+        }
+    }
 }
 
-void initAllocMaintence(Maintenances * maintenances, int size) {
-
-            if ((maintenances->maintenance = (Maintenance *)malloc(size * sizeof(Maintenance))) == NULL) {
+void initAllocUser(Users * users, int size) {
+            if ((users->users = (User *)malloc(size * sizeof(User))) == NULL) {
                 printf("feile");
                 exit(EXIT_FAILURE);
 
-                maintenances->count = size;
     }
 
 

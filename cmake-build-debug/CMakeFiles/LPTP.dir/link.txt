@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/LPTP.dir/main.c.o CMakeFiles/LPTP.dir/equipment.c.o CMakeFiles/LPTP.dir/input.c.o CMakeFiles/LPTP.dir/menu.c.o CMakeFiles/LPTP.dir/files.c.o CMakeFiles/LPTP.dir/user.c.o CMakeFiles/LPTP.dir/memory.c.o -o LPTP 
+/usr/bin/cc -g CMakeFiles/LPTP.dir/main.c.o CMakeFiles/LPTP.dir/equipment.c.o CMakeFiles/LPTP.dir/input.c.o CMakeFiles/LPTP.dir/menu.c.o CMakeFiles/LPTP.dir/files.c.o CMakeFiles/LPTP.dir/user.c.o CMakeFiles/LPTP.dir/memory.c.o CMakeFiles/LPTP.dir/list.c.o CMakeFiles/LPTP.dir/search.c.o -o LPTP 

@@ -94,6 +94,12 @@
 		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/input.h">
 			<Option target="LPTP"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/list.c">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/list.h">
+			<Option target="LPTP"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/main.c">
 			<Option target="LPTP"/>
 		</Unit>
@@ -107,6 +113,12 @@
 			<Option target="LPTP"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/menu.h">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/search.c">
+			<Option target="LPTP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/search.h">
 			<Option target="LPTP"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/emanu/Desktop/LPTP/user.c">

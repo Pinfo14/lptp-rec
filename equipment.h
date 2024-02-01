@@ -35,11 +35,6 @@ typedef struct {
    char notes[MAX_NOTES];
 }Maintenance;
 
-typedef struct {
-    int count;
-    int allocatedCells;
-    Maintenance *maintenance;
-}Maintenances;
 
 typedef struct {
     int id;
@@ -61,7 +56,8 @@ typedef struct {
 
 void insertEquipments(Equipments *equipments);
 void updateState(Equipments *equipments);
-void listEquipment(Equipments equipments);
-void insertMaintenance(Equipments *equipments, Maintenances *maintenances);
+void addMaintenanceToEquipment(Equipments *equipments);
+void displayMaintenanceHistory( Equipments *equipments);
+void deleteEquipment(Equipments *equipments);
 
 #endif //LPTP_EQUIPMENT_H
