@@ -5,7 +5,7 @@
 #include "stdio.h"
 #include "list.h"
 #include "search.h"
-void search(Equipments equipments){
+void search(Equipments* equipments){
     int op = 0;
 
     do {
@@ -17,10 +17,10 @@ void search(Equipments equipments){
         scanf("%d", &op);
         switch (op) {
             case 1:
-                searchById(equipments);
+                searchById(*equipments);
                 break;
             case 2:
-                searchEqByName(&equipments);
+                searchEqByName(equipments);
                 break;
 
             default:
@@ -28,7 +28,7 @@ void search(Equipments equipments){
         }
     } while (op != 0);
 }
-void listEquipment(Equipments equipments){
+void listEquipment(Equipments* equipments){
     int op = 0;
 
     do {
@@ -41,21 +41,21 @@ void listEquipment(Equipments equipments){
         scanf("%d", &op);
         switch (op) {
             case 1:
-                listFreeEquipment(equipments);
+                listFreeEquipment(*equipments);
                 break;
             case 2:
-                listRecicle(equipments);
+                listRecicle(*equipments);
 
                 break;
             case 3:
-                listAllEquipment(equipments);
+                listAllEquipment(*equipments);
                 break;
             default:
                 puts("erro");
         }
     } while (op != 0);
 }
-void equipmentManagmentMenu(Equipments equipments){
+void equipmentManagmentMenu(Equipments* equipments){
     int op = 0;
 
     do {
@@ -71,22 +71,22 @@ void equipmentManagmentMenu(Equipments equipments){
         scanf("%d", &op);
         switch (op) {
             case 1:
-                insertEquipments(&equipments);
+                insertEquipments(equipments);
                 break;
             case 2:
                 listEquipment(equipments);
                 break;
             case 3:
-                 addMaintenanceToEquipment( &equipments);
+                 addMaintenanceToEquipment(equipments);
                 break;
             case 4:
-                updateState(&equipments);
+                updateState(equipments);
                 break;
             case 5:
-                 displayMaintenanceHistory(  &equipments);
+                 displayMaintenanceHistory(equipments);
                 break;
             case 6:
-               deleteEquipment(&equipments);
+               deleteEquipment(equipments);
                 break;
             default:
                 puts("erro");
@@ -94,7 +94,7 @@ void equipmentManagmentMenu(Equipments equipments){
     } while (op != 0);
 }
 
-void userManagmentMenu(Users user,Equipments equipments){
+void userManagmentMenu(Users* user,Equipments* equipments){
     int op = 0;
 
     do {
@@ -109,26 +109,26 @@ void userManagmentMenu(Users user,Equipments equipments){
         scanf("%d", &op);
         switch (op) {
             case 1:
-                insertUser(&user);
+                insertUser(user);
                 break;
             case 2:
-                listUsers(user);
+                listUsers(*user);
                 break;
             case 3:
-                updateUserState(&user);
+                updateUserState(user);
                 break;
             case 4:
-                deleteUsers(&user,equipments);
+                deleteUsers(user,*equipments);
                 break;
             case 5:
-                userEquipment(&equipments,user);
+                userEquipment(equipments,*user);
                 break;
             default:
                 puts("erro");
         }
     } while (op != 0);
 }
-void mainMenu(Equipments equipments,Users users){
+void mainMenu(Equipments* equipments,Users* users){
     int op = 0;
 
     do {
@@ -147,7 +147,7 @@ void mainMenu(Equipments equipments,Users users){
                 userManagmentMenu(users,equipments);
                 break;
             case 3:
-                userManagmentMenu(users,equipments);
+                search(equipments);
                 break;
             default:
                 puts("erro");

@@ -8,6 +8,7 @@
 #include "list.h"
 #include "search.h"
 
+
 int searchUser(Users users, int id){
     for (int i = 0; i < users.count; ++i) {
         if(id == users.users[i].id){
@@ -30,10 +31,9 @@ void insertUser(Users *users){
 
 
 void printUser(User user) {
-
     printf("%d   %s  %s  %s  %d\n",user.id,user.name,user.acronym,user.function,user.state);
-
 }
+
 
 void listUsers(Users users){
 
@@ -61,7 +61,6 @@ void updateUserState(Users *users){
 }
 
 
-
 void deleteUsers(Users *users, Equipments equipments) {
     int id = 0;
     int position = 0;
@@ -71,7 +70,6 @@ void deleteUsers(Users *users, Equipments equipments) {
             id = getInt(MIN_ID, MAX_ID, "Insert the id: ");
             position = searchUser(*users, id);
         } while (position == -1);
-
         // Check if the user can be deleted
         int canDelete = 1;  // Assume deletion is possible
         for (int i = 0; i < equipments.count; ++i) {
@@ -82,7 +80,6 @@ void deleteUsers(Users *users, Equipments equipments) {
                 break;  // Exit the loop since deletion is not allowed
             }
         }
-
         // If the user can be deleted, proceed with deletion
         if (canDelete) {
             users->users[position] = users->users[users->count - 1];
@@ -92,6 +89,7 @@ void deleteUsers(Users *users, Equipments equipments) {
         }
     }
 }
+
 
 void userEquipment(Equipments *equipments,Users users){
     listFreeEquipment(*equipments);
@@ -113,5 +111,4 @@ void userEquipment(Equipments *equipments,Users users){
     } else{
         puts(NO_EQUIPMENT);
     }
-
 }

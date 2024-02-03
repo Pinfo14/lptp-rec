@@ -7,6 +7,6 @@
 #include "equipment.h"
 #include "user.h"
 
-void  mainMenu(Equipments equipments,Users users);
-void equipmentManagmentMenu(Equipments equipments);
+void  mainMenu(Equipments* equipments,Users* users);
+void equipmentManagmentMenu(Equipments* equipments);
 #endif //LPTP_MENU_H

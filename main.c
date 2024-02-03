@@ -13,7 +13,7 @@ int main() {
   loadEquipment(&equipments);
     loadUser(&users);
  // loadMaintenance(&maintenance);
-    mainMenu(equipments,users);
+    mainMenu(&equipments,&users);
 
    // exportEquipments(&equipments,&maintenance);
   saveEquipments(&equipments);
