@@ -22,7 +22,8 @@ void search(Equipments* equipments){
             case 2:
                 searchEqByName(equipments);
                 break;
-
+            case 3:
+                break;
             default:
                 puts("erro");
         }
@@ -123,6 +124,7 @@ void userManagmentMenu(Users* user,Equipments* equipments){
             case 5:
                 userEquipment(equipments,*user);
                 break;
+
             default:
                 puts("erro");
         }
@@ -149,6 +151,7 @@ void mainMenu(Equipments* equipments,Users* users){
             case 3:
                 search(equipments);
                 break;
+
             default:
                 puts("erro");
         }
