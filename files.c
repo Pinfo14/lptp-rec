@@ -21,7 +21,6 @@ void loadEquipment(Equipments* equipments) {
                 printf(FAILURE_READING_FILE);
                 exit(EXIT_FAILURE);
             }
-
             if (equipments->count > 0) {
                 initAllocEquipment(equipments, equipments->count);
                 if (fread(equipments->equipment, sizeof(Equipment), equipments->count, fp) == equipments->count) {
@@ -55,25 +54,20 @@ void loadEquipment(Equipments* equipments) {
 
 void saveEquipments(Equipments* equipments) {
     FILE* fp = fopen(FILENAME_EQUIPMENT, "wb");
-
     if (fp == NULL) {
         perror("Error opening file for writing");
         exit(EXIT_FAILURE);
     }
-
     // Write the number of equipment records to the file
     fwrite(&(equipments->count), sizeof(int), 1, fp);
-
     // Write each equipment record to the file
     for (int i = 0; i < equipments->count; i++) {
         fwrite(&(equipments->equipment[i]), sizeof(Equipment), 1, fp);
-
         // Write maintenance records for each equipment
         for (int j = 0; j < equipments->equipment[i].num_maintenance; j++) {
             fwrite(&(equipments->equipment[i].maintenance[j]), sizeof(Maintenance), 1, fp);
         }
     }
-
     fclose(fp);
 }
 void loadUser(Users* users) {
@@ -106,7 +100,6 @@ void loadUser(Users* users) {
 
         if (fp != NULL) {
             initAllocUser(users, 1);
-
         } else {
             printf(FAILURE_CREATING_FILE);
             exit(EXIT_FAILURE);
@@ -117,6 +110,7 @@ void loadUser(Users* users) {
 
 void saveUser(Users* users) {
     FILE* fp = fopen(FILENAME_USER, "wb"); // it overwrites the file used to load the company's data previously
+
     if (fp == NULL) {
         fprintf(stderr, FAILURE_OVERWRITING_FILE);
         exit(EXIT_FAILURE);
