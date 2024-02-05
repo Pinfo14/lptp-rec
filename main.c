@@ -4,7 +4,7 @@
 #include "menu.h"
 #include "files.h"
 int main() {
-
+    setbuf(stdout,NULL);
     Equipments equipments={.count = 0};
     Users users={.count = 0};
 

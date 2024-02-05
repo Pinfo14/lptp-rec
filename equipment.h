@@ -49,7 +49,6 @@ typedef struct {
 
 typedef struct {
     int count;
-    int allocatedCells;
     Equipment *equipment;
 }Equipments;
 
