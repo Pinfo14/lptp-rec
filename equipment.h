@@ -1,7 +1,17 @@
 //
-// Created by emanu on 29/01/2024.
+// Created by emanu on .
 //
-
+/**
+* @file equipment.h
+* @author Emanuel Pinto
+* @date  29/01/2024
+* @version 1
+*
+* @brief A header file providing function to manage equipments.
+*
+* This file contains a collection of functions to manage equipments.
+* It includes functions to insert new equipment, update state, add maintenance, visualise maintenance report and delete equipment.
+*/
 #ifndef LPTP_EQUIPMENT_H
 #define LPTP_EQUIPMENT_H
 #define  MAX_CHAR 100

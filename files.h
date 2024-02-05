@@ -1,7 +1,14 @@
-//
-// Created by emanu on 29/01/2024.
-//
-
+/**
+* @file files.h
+* @author Emanuel Pinto
+* @date  29/01/2024
+* @version 1
+*
+* @brief A header file providing function do handle files.
+*
+* This file contains a collection of functions for managing the files.
+* It includes functions to save and load users and equipments fom file.
+*/
 #ifndef LPTP_FILES_H
 #define LPTP_FILES_H
 #include "equipment.h"
