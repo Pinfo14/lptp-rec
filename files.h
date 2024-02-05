@@ -6,8 +6,8 @@
 #define LPTP_FILES_H
 #include "equipment.h"
 #include "user.h"
-#define FILENAME_EQUIPMENT "../data/data_eq.bin"
-#define FILENAME_USER "../data/data_user.bin"
+#define FILENAME_EQUIPMENT "../data/data_eq.dat"
+#define FILENAME_USER "../data/data_user.dat"
 #define FAILURE_READING_FILE "File reading failure"
 #define FAILURE_CREATING_FILE "File creating failure"
 #define FAILURE_OVERWRITING_FILE "File overwriting failure"
