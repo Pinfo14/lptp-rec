@@ -14,7 +14,9 @@ void initAllocEquipment(Equipments *equipments, int size) {
         fprintf(stderr, "Memory allocation error for equipment\n");
         exit(EXIT_FAILURE);
     }
+}
 
+void initAllocMain(Equipments *equipments, int size){
     for (int i = 0; i < size; ++i) {
         equipments->equipment[i].maintenance = (Maintenance *)malloc(size * sizeof(Maintenance));
         if (equipments->equipment[i].maintenance == NULL) {
@@ -28,8 +30,6 @@ void initAllocUser(Users * users, int size) {
             if ((users->users = (User *)malloc(size * sizeof(User))) == NULL) {
                 printf("feile");
                 exit(EXIT_FAILURE);
-
     }
-
-
 }
+

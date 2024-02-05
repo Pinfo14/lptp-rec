@@ -8,7 +8,7 @@
 #include "memory.h"
 
 
-void loadEquipment(Equipments * equipments) {
+void loadEquipment(Equipments* equipments) {
     int readSuccess = 0;
     long size; //stores the files size in bytes
     FILE* fp = fopen(FILENAME_EQUIPMENT, "rb");
@@ -21,13 +21,18 @@ void loadEquipment(Equipments * equipments) {
                 printf(FAILURE_READING_FILE);
                 exit(EXIT_FAILURE);
             }
+
             if (equipments->count > 0) {
                 initAllocEquipment(equipments, equipments->count);
-                if (fread(equipments->equipment, sizeof(Equipment), equipments->count, fp) != equipments->count) {
+                if (fread(equipments->equipment, sizeof(Equipment), equipments->count, fp) == equipments->count) {
+                    for (int i = 0; i < equipments->count; ++i) {
+                        fread(&(equipments->equipment[i].num_maintenance), sizeof(int), 1, fp);
+                        initAllocMain(equipments, equipments->equipment[i].num_maintenance);
+                    }
+                } else{
                     printf(FAILURE_READING_FILE);
                     exit(EXIT_FAILURE);
                 }
-
                 readSuccess = 1;
             }
         }
@@ -49,18 +54,16 @@ void loadEquipment(Equipments * equipments) {
 }
 
 void saveEquipments(Equipments* equipments) {
-    FILE* fp = fopen(FILENAME_EQUIPMENT, "wb"); // it overwrites the file used to load the company's data previously
+    FILE* fp = fopen(FILENAME_EQUIPMENT, "wb");
     if (fp == NULL) {
         fprintf(stderr, FAILURE_OVERWRITING_FILE);
         exit(EXIT_FAILURE);
     }
-
     // Write the total count of equipments
     if (fwrite(&(equipments->count), sizeof(int), 1, fp) != 1) {
         fprintf(stderr, FAILURE_WRITING_FILE);
         exit(EXIT_FAILURE);
     }
-
     // Write the equipments data
     if (equipments->count > 0) {
         if (fwrite(equipments->equipment, sizeof(Equipment), equipments->count, fp) != equipments->count) {
@@ -70,18 +73,24 @@ void saveEquipments(Equipments* equipments) {
 
         // Write maintenance records for each equipment
         for (int i = 0; i < equipments->count; ++i) {
-            if (fwrite(equipments->equipment[i].maintenance, sizeof(Maintenance), equipments->equipment[i].num_maintenance, fp) != equipments->equipment[i].num_maintenance) {
+            // Write the number of maintenance records for this equipment
+            if (fwrite(&(equipments->equipment[i].num_maintenance), sizeof(int), 1, fp) != 1) {
                 fprintf(stderr, FAILURE_WRITING_FILE);
                 exit(EXIT_FAILURE);
+            }
+            // Write maintenance records for this equipment
+            for (int j = 0; j < equipments->equipment[i].num_maintenance; ++j) {
+                if (fwrite(&(equipments->equipment[i].maintenance[j]), sizeof(Maintenance),equipments->equipment[i].num_maintenance  , fp) != 1) {
+                    fprintf(stderr, FAILURE_WRITING_FILE);
+                    exit(EXIT_FAILURE);
+                }
             }
         }
     }
 
     fclose(fp);
 }
-
-
-void loadUser(Users * users) {
+void loadUser(Users* users) {
     int readSuccess = 0;
     long size; //stores the files size in bytes
     FILE* fp = fopen(FILENAME_USER, "rb");
@@ -100,7 +109,6 @@ void loadUser(Users * users) {
                     printf(FAILURE_READING_FILE);
                     exit(EXIT_FAILURE);
                 }
-
                 readSuccess = 1;
             }
         }
@@ -121,27 +129,23 @@ void loadUser(Users * users) {
     }
 }
 
-void saveUser(Users * users) {
+void saveUser(Users* users) {
     FILE* fp = fopen(FILENAME_USER, "wb"); // it overwrites the file used to load the company's data previously
     if (fp == NULL) {
         fprintf(stderr, FAILURE_OVERWRITING_FILE);
         exit(EXIT_FAILURE);
     }
-
     // Write the total count of equipments
     if (fwrite(&(users->count), sizeof(int), 1, fp) != 1) {
         fprintf(stderr, FAILURE_WRITING_FILE);
         exit(EXIT_FAILURE);
     }
-
     // Write the equipments data
     if (users->count > 0) {
         if (fwrite(users->users, sizeof(User), users->count, fp) != users->count) {
             fprintf(stderr, FAILURE_WRITING_FILE);
             exit(EXIT_FAILURE);
         }
-
     }
-
     fclose(fp);
 }
