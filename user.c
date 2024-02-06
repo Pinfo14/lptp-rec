@@ -7,6 +7,7 @@
 #include "input.h"
 #include "list.h"
 #include "search.h"
+#include "memory.h"
 
 
 int searchUser(Users users, int id){
@@ -20,6 +21,7 @@ int searchUser(Users users, int id){
 
 
 void insertUser(Users *users){
+    reallocUser(users);
         users->users[users->count].id = users->count+1;
         cleanInputBuffer();
         readString(users->users[users->count].name,MAX_CHAR,"Name: ");

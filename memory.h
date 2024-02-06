@@ -14,9 +14,13 @@
 #define LPTP_MEMORY_H
 #include "equipment.h"
 #include "user.h"
+#define GROWTH_FACTOR 2
 
 void initAllocEquipment(Equipments * equipments, int size);
 void initAllocMain(Equipments *equipments, int size);
 void initAllocUser(Users * users, int size);
+void reallocEquipment(Equipments* equipments);
+void reallocMain(Equipments* equipments);
+void reallocUser(Users* users);
 void freeMem(Equipments* equipments,Users* users);
 #endif //LPTP_MEMORY_H

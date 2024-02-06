@@ -32,6 +32,7 @@ typedef struct {
 }User;
 typedef struct {
     int count;
+    int allocatedCel;
     User *users;
 }Users;
 void insertUser(Users *users);

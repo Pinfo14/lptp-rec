@@ -25,4 +25,5 @@ CMakeFiles/LPTP.dir/menu.c.o: /mnt/c/Users/emanu/Desktop/LPTP/menu.c \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /mnt/c/Users/emanu/Desktop/LPTP/list.h \
- /mnt/c/Users/emanu/Desktop/LPTP/search.h
+ /mnt/c/Users/emanu/Desktop/LPTP/search.h \
+ /mnt/c/Users/emanu/Desktop/LPTP/input.h

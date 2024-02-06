@@ -25,4 +25,5 @@ CMakeFiles/LPTP.dir/user.c.o: /mnt/c/Users/emanu/Desktop/LPTP/user.c \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /mnt/c/Users/emanu/Desktop/LPTP/input.h \
  /mnt/c/Users/emanu/Desktop/LPTP/list.h \
- /mnt/c/Users/emanu/Desktop/LPTP/search.h
+ /mnt/c/Users/emanu/Desktop/LPTP/search.h \
+ /mnt/c/Users/emanu/Desktop/LPTP/memory.h

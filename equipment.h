@@ -55,10 +55,12 @@ typedef struct {
     int userCode;
     Maintenance *maintenance;
     int num_maintenance;
+    int allocatedMainCel;
 }Equipment;
 
 typedef struct {
     int count;
+    int allocatedCel;
     Equipment *equipment;
 }Equipments;
 

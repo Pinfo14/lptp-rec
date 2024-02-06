@@ -8,8 +8,10 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "search.h"
+#include "memory.h"
 
 void insertEquipments(Equipments *equipments){
+    reallocEquipment(equipments);
     equipments->equipment[equipments->count].id = equipments->count+1;
      cleanInputBuffer();
     readString(equipments->equipment[equipments->count].designation,MAX_CHAR,"Designation: ");
@@ -30,10 +32,7 @@ void addMaintenanceToEquipment(Equipments *equipments) {
         position = searchEq(*equipments,id);
     }while(position==-1);
     // Dynamically allocate memory for maintenance array if not already done
-    if (equipments->equipment[position].maintenance == NULL) {
-        equipments->equipment[position].maintenance = (Maintenance *)malloc(sizeof(Maintenance)*1);
-    } else {
-   }
+    reallocMain(equipments);
     if (equipments->equipment[position].maintenance != NULL) {
             // Add the new maintenance record
             equipments->equipment[position].maintenance[equipments->equipment[position].num_maintenance].num_movement++;

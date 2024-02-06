@@ -49,4 +49,6 @@ CMakeFiles/LPTP.dir/equipment.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /mnt/c/Users/emanu/Desktop/LPTP/search.h
+ /mnt/c/Users/emanu/Desktop/LPTP/search.h \
+ /mnt/c/Users/emanu/Desktop/LPTP/memory.h \
+ /mnt/c/Users/emanu/Desktop/LPTP/user.h
