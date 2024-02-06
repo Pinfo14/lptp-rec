@@ -1,6 +1,4 @@
-//
-// Created by emanu on 01/02/2024.
-//
+
 /**
  * @file search.c
  * @author Emanuel Pinto

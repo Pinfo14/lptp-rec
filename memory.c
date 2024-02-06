@@ -38,7 +38,7 @@ void initAllocMain(Equipments* equipments, int size){
 
 void initAllocUser(Users* users, int size) {
     if ((users->users = (User *)malloc(size * sizeof(User))) == NULL) {
-        printf("feile");
+        fprintf(stderr, "Memory allocation error for user records\n");
         exit(EXIT_FAILURE);
     }
      users->allocatedCel=size;
@@ -84,7 +84,6 @@ void reallocUser(Users* users) {
 }
 
 void freeMem(Equipments* equipments,Users* users) {
-
     for (int i = 0; i <equipments->count; i++) {
         free(equipments->equipment[i].maintenance);
     }

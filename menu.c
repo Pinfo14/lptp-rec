@@ -15,6 +15,7 @@
 #include "list.h"
 #include "search.h"
 #include "input.h"
+#define ERRO "ERRO"
 void search(Equipments* equipments){
     int op = 0;
 
@@ -34,7 +35,7 @@ void search(Equipments* equipments){
             case 3:
                 break;
             default:
-                puts("erro");
+                puts(ERRO);
         }
     } while (op != 0);
 }
@@ -53,14 +54,13 @@ void listEquipment(Equipments* equipments){
                 listFreeEquipment(*equipments);
                 break;
             case 2:
-                listRecicle(*equipments);
-
+                listRecycle(*equipments);
                 break;
             case 3:
                 listAllEquipment(*equipments);
                 break;
             default:
-                puts("erro");
+                puts(ERRO);
         }
     } while (op != 0);
 }
@@ -97,7 +97,7 @@ void equipmentManagmentMenu(Equipments* equipments){
                deleteEquipment(equipments);
                 break;
             default:
-                puts("erro");
+                puts(ERRO);
         }
     } while (op != 0);
 }
@@ -132,7 +132,7 @@ void userManagmentMenu(Users* user,Equipments* equipments){
                 break;
 
             default:
-                puts("erro");
+                puts(ERRO);
         }
     } while (op != 0);
 }
@@ -158,7 +158,7 @@ void mainMenu(Equipments* equipments,Users* users){
                 break;
 
             default:
-                puts("erro");
+                puts(ERRO);
         }
     } while (op != 0);
 }
