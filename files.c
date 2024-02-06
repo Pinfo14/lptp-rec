@@ -9,6 +9,7 @@
  * @brief Contains functions for manage files.
  */
 
+
 #include "files.h"
 #include "stdlib.h"
 #include "stdio.h"
@@ -31,15 +32,16 @@ void loadEquipment(Equipments* equipments) {
             if (equipments->count > 0) {
                 initAllocEquipment(equipments, equipments->count);
                 if (fread(equipments->equipment, sizeof(Equipment), equipments->count, fp) == equipments->count) {
-                    for (int i = 0; i < equipments->count; ++i) {
-                        fread(&(equipments->equipment[i].num_maintenance), sizeof(int), 1, fp);
-                        initAllocMain(equipments, equipments->equipment[i].num_maintenance);
-
-                    if(equipments->equipment[i].num_maintenance>0){
-                        fread(equipments->equipment[i].maintenance, sizeof(Equipment), equipments->equipment[i].num_maintenance, fp);
+                    for (int i = 0; i < equipments->count; i++) {
+                        if (equipments->equipment[i].num_maintenance > 0){
+                            initAllocMain(equipments, equipments->equipment[i].num_maintenance);
+                            if (fread(equipments->equipment[i].maintenance, sizeof(Maintenance), equipments->equipment[i].num_maintenance, fp) != equipments->equipment[i].num_maintenance) {
+                                printf(FAILURE_READING_FILE);
+                                exit(EXIT_FAILURE);
+                            }
+                        }
                     }
-                    }
-                } else{
+                } else {
                     printf(FAILURE_READING_FILE);
                     exit(EXIT_FAILURE);
                 }
@@ -71,10 +73,12 @@ void saveEquipments(Equipments* equipments) {
     }
     fwrite(&(equipments->count), sizeof(int), 1, fp);
 
+    fwrite(equipments->equipment, sizeof(Equipment),  equipments->count, fp);
+
     for (int i = 0; i < equipments->count; i++) {
-        fwrite(&(equipments->equipment[i]), sizeof(Equipment),  equipments->count, fp);
         fwrite(equipments->equipment[i].maintenance, sizeof(Maintenance), equipments->equipment[i].num_maintenance, fp);
     }
+
     fclose(fp);
 }
 void loadUser(Users* users) {

@@ -19,14 +19,20 @@
 
 void insertEquipments(Equipments *equipments){
     reallocEquipment(equipments);
-    equipments->equipment[equipments->count].id = equipments->count+1;
+    int lastId=0;
+    for (int i = 0; i<equipments->count ; i++) {
+        if((equipments->equipment[i].id) > lastId){
+            lastId=equipments->equipment[i].id;
+        }
+    }
+    equipments->equipment[equipments->count].id = lastId+1;
 
     readString(equipments->equipment[equipments->count].designation,MAX_CHAR,"Designation: ");
     equipments->equipment[equipments->count].date.day = getInt(MIN_DAY,MAX_DAY,"Day: ");
     equipments->equipment[equipments->count].date.month = getInt(MIN_MONTH,MAX_MONTH,"Month: ");
     equipments->equipment[equipments->count].date.year = getInt(MIN_YEAR,MAX_YEAR,"Year: ");
-    equipments->equipment[equipments->count].category = getInt(MIN_CATG,MAX_CATG,"ccatr: ");
-    equipments->equipment[equipments->count].state = getInt(MIN_CATG,MAX_CATG,"stra: ");
+    equipments->equipment[equipments->count].category = getInt(MIN_CATG,MAX_CATG,"category: ");
+    equipments->equipment[equipments->count].state = getInt(MIN_CATG,MAX_CATG,"state: ");
     equipments->count++;
 }
 
@@ -122,6 +128,8 @@ void deleteEquipment(Equipments *equipments) {
             // Move the last equipment to the position to be deleted
             equipments->equipment[position] = equipments->equipment[equipments->count - 1];
             equipments->count--;
+
+
 
             printf("Equipment with ID %d has been deleted.\n", id);
         }
