@@ -1,6 +1,14 @@
-//
-// Created by emanu on 30/01/2024.
-//
+/**
+ * @file memory.c
+ * @author Emanuel Pinto
+ * @date 30-01-2024
+ * @version 1
+ *
+ * @copyright Copyright (C) Emanuel 2024. All Rights MIT Licensed.
+ *
+ * @brief Contains functions for manage memory.
+ */
+
 
 #include "memory.h"
 #include "equipment.h"

@@ -1,6 +1,13 @@
-//
-// Created by emanu on 01/02/2024.
-//
+/**
+ * @file list.c
+ * @author Emanuel Pinto
+ * @date 01-02-2024
+ * @version 1
+ *
+ * @copyright Copyright (C) Emanuel 2024. All Rights MIT Licensed.
+ *
+ * @brief Contains functions used to list equipments.
+ */
 
 #include "list.h"
 #include "stdio.h"

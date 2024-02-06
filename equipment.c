@@ -1,19 +1,26 @@
-//
-//
-// Created by emanu on 29/01/2024.
-//
+
+/**
+ * @file equipment.c
+ * @author Emanuel Pinto
+ * @date 29-10-2024
+ * @version 1
+ *
+ * @copyright Copyright (C) Emanuel 2024. All Rights MIT Licensed.
+ *
+ * @brief Contains functions for manage equipment.
+ */
 
 #include "equipment.h"
 #include "input.h"
 #include "stdio.h"
-#include "stdlib.h"
+
 #include "search.h"
 #include "memory.h"
 
 void insertEquipments(Equipments *equipments){
     reallocEquipment(equipments);
     equipments->equipment[equipments->count].id = equipments->count+1;
-     cleanInputBuffer();
+
     readString(equipments->equipment[equipments->count].designation,MAX_CHAR,"Designation: ");
     equipments->equipment[equipments->count].date.day = getInt(MIN_DAY,MAX_DAY,"Day: ");
     equipments->equipment[equipments->count].date.month = getInt(MIN_MONTH,MAX_MONTH,"Month: ");
@@ -31,7 +38,7 @@ void addMaintenanceToEquipment(Equipments *equipments) {
         id = getInt(MIN_ID,MAX_ID,"Insert the id: ");
         position = searchEq(*equipments,id);
     }while(position==-1);
-    // Dynamically allocate memory for maintenance array if not already done
+
     reallocMain(equipments);
     if (equipments->equipment[position].maintenance != NULL) {
             // Add the new maintenance record

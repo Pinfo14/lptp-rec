@@ -1,6 +1,13 @@
-//
-// Created by emanu on 29/01/2024.
-//
+/**
+ * @file files.c
+ * @author Emanuel Pinto
+ * @date 29-10-2024
+ * @version 1
+ *
+ * @copyright Copyright (C) Emanuel 2024. All Rights MIT Licensed.
+ *
+ * @brief Contains functions for manage files.
+ */
 
 #include "files.h"
 #include "stdlib.h"

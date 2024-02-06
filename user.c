@@ -1,6 +1,13 @@
-//
-// Created by emanu on 30/01/2024.
-//
+/**
+ * @file user.c
+ * @author Emanuel Pinto
+ * @date  30/01/2024
+ * @version 1
+ *
+ * @copyright Copyright (C) Emanuel 2024. All Rights MIT Licensed.
+ *
+ * @brief Contains functions for manage users.
+ */
 
 #include "user.h"
 #include "stdio.h"
@@ -23,7 +30,7 @@ int searchUser(Users users, int id){
 void insertUser(Users *users){
     reallocUser(users);
         users->users[users->count].id = users->count+1;
-        cleanInputBuffer();
+
         readString(users->users[users->count].name,MAX_CHAR,"Name: ");
         readString(users->users[users->count].acronym,MAX_ACRON,"Acronym: ");
         readString(users->users[users->count].function,MAX_CHAR,"Function: ");

@@ -1,6 +1,15 @@
-//
-// Created by emanu on 29/01/2024.
-//
+
+/**
+ * @file equipment.c
+ * @author Emanuel Pinto
+ * @date  29/01/2024
+ * @version 1
+ *
+ * @copyright Copyright (C) Emanuel 2024. All Rights MIT Licensed.
+ *
+ * @brief Contains functions for the menu.
+ */
+
 #include "menu.h"
 #include "stdio.h"
 #include "list.h"

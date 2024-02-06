@@ -11,12 +11,36 @@
 */
 #ifndef LPTP_LIST_H
 #define LPTP_LIST_H
+
 #include "equipment.h"
+
+/**
+ * @brief Error message for no equipment found.
+ */
 #define NO_EQUIPMENT "No Equipment Found!!"
 
-
+/**
+ * @brief Lists free equipment.
+ * @param equipments The Equipments structure containing equipment data.
+ */
 void listFreeEquipment(Equipments equipments);
-void listRecicle(Equipments equipments);
+
+/**
+ * @brief Lists equipment for recycling.
+ * @param equipments The Equipments structure containing equipment data.
+ */
+void listRecycle(Equipments equipments);
+
+/**
+ * @brief Lists all equipment.
+ * @param equipments The Equipments structure containing equipment data.
+ */
 void listAllEquipment(Equipments equipments);
+
+/**
+ * @brief Prints information about a single equipment.
+ * @param equipment The equipment to print.
+ */
 void printEquipment(Equipment equipment);
+
 #endif //LPTP_LIST_H

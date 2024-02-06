@@ -1,33 +1,78 @@
-//
-// Created by emanu on 29/01/2024.
-//
+/**
+ * @file input.c
+ * @author ESTG
+ * @date 28-10-2023
+ * @version 1
+ *
+ * @copyright Copyright (C) ESTG 2023. All Rights MIT Licensed.
+ *
+ * @brief Contains functions for user input.
+ */
 
-#include "input.h"
-#include "stdlib.h"
-#include "stdio.h"
-#include "string.h"
-#define INVALID_INPUT "Invalid input value."
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * @brief A string constant representing an invalid value message.
+ *
+ * This constant is used to define a standard error message for invalid input values.
+ * It can be used throughout the program to provide consistent error messages to the user
+ * when they enter an invalid value.
+ */
+#define VALOR_INVALIDO "O valor inserido é inválido."
 
 void cleanInputBuffer() {
     char ch;
     while ((ch = getchar()) != '\n' && ch != EOF);
 }
 
-int getInt(int minValue, int maxValue, char *msg) {
-    int value;
+int getInt(int minValor, int maxValor, char *msg) {
+    int valor;
     printf(msg);
-    while (scanf("%d", &value) != 1 || value < minValue || value > maxValue) {
-        puts(INVALID_INPUT);
+    while (scanf("%d", &valor) != 1 || valor < minValor || valor > maxValor) {
+        puts(VALOR_INVALIDO);
         cleanInputBuffer();
         printf(msg);
     }
     cleanInputBuffer();
-    return value;
+    return valor;
 }
 
-void readString(char *string, unsigned int size, char *msg) {
+float getFloat(float minValor, float maxValor, char *msg) {
+    float valor;
     printf(msg);
-    if (fgets(string, size, stdin) != NULL) {
+    while (scanf("%f", &valor) != 1 || valor < minValor || valor > maxValor) {
+        puts(VALOR_INVALIDO);
+        cleanInputBuffer();
+        printf(msg);
+    }
+    cleanInputBuffer();
+    return valor;
+}
+
+double getDouble(double minValor, double maxValor, char *msg) {
+    double valor;
+    printf(msg);
+    while (scanf("%lf", &valor) != 1 || valor < minValor || valor > maxValor) {
+        puts(VALOR_INVALIDO);
+        cleanInputBuffer();
+        printf(msg);
+    }
+    cleanInputBuffer();
+    return valor;
+}
+
+char getChar(char *msg) {
+    char valor;
+    printf(msg);
+    valor = getchar();
+    cleanInputBuffer();
+    return valor;
+}
+
+void readString(char *string, unsigned int tamanho, char *msg) {
+    printf(msg);
+    if (fgets(string, tamanho, stdin) != NULL) {
         unsigned int len = strlen(string) - 1;
         if (string[len] == '\n') {
             string[len] = '\0';
