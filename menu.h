@@ -6,7 +6,7 @@
 #define LPTP_MENU_H
 #include "equipment.h"
 #include "user.h"
-
+#define OPTION "CHOOSE OPTION: "
 void  mainMenu(Equipments* equipments,Users* users);
 void equipmentManagmentMenu(Equipments* equipments);
 #endif //LPTP_MENU_H

@@ -5,6 +5,7 @@
 #include "stdio.h"
 #include "list.h"
 #include "search.h"
+#include "input.h"
 void search(Equipments* equipments){
     int op = 0;
 
@@ -13,8 +14,7 @@ void search(Equipments* equipments){
         printf("1.Search by ID\n");
         printf("2.Search by Name\n");
         printf("0. EXIT\n");
-        printf("CHOOSE OPTION: ");
-        scanf("%d", &op);
+        op= getInt(0,2,OPTION);
         switch (op) {
             case 1:
                 searchById(*equipments);
@@ -38,8 +38,7 @@ void listEquipment(Equipments* equipments){
         printf("2. Recicle Equipment\n");
         printf("3. All Equipment\n");
         printf("0. EXIT\n");
-        printf("CHOOSE OPTION: ");
-        scanf("%d", &op);
+        op= getInt(0,3,OPTION);
         switch (op) {
             case 1:
                 listFreeEquipment(*equipments);
@@ -68,8 +67,7 @@ void equipmentManagmentMenu(Equipments* equipments){
         printf("5. View Maintenance report\n");
         printf("6. Delete equipemt\n");
         printf("0. EXIT\n");
-        printf("CHOOSE OPTION: ");
-        scanf("%d", &op);
+        op= getInt(0,6,OPTION);
         switch (op) {
             case 1:
                 insertEquipments(equipments);
@@ -106,8 +104,7 @@ void userManagmentMenu(Users* user,Equipments* equipments){
         printf("4. Remove\n");
         printf("5. User equipment\n");
         printf("0. EXIT\n");
-        printf("CHOOSE OPTION: ");
-        scanf("%d", &op);
+        op= getInt(0,5,OPTION);
         switch (op) {
             case 1:
                 insertUser(user);
@@ -139,8 +136,7 @@ void mainMenu(Equipments* equipments,Users* users){
         printf("2. USER MANAGMENT\n");
         printf("3. Search\n");
         printf("0. EXIT\n");
-        printf("CHOOSE OPTION: ");
-        scanf("%d", &op);
+        op= getInt(0,3,OPTION);
         switch (op) {
             case 1:
                 equipmentManagmentMenu(equipments);

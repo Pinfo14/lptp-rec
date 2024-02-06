@@ -18,4 +18,5 @@
 void initAllocEquipment(Equipments * equipments, int size);
 void initAllocMain(Equipments *equipments, int size);
 void initAllocUser(Users * users, int size);
+void freeMem(Equipments* equipments,Users* users);
 #endif //LPTP_MEMORY_H

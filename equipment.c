@@ -33,10 +33,7 @@ void addMaintenanceToEquipment(Equipments *equipments) {
     if (equipments->equipment[position].maintenance == NULL) {
         equipments->equipment[position].maintenance = (Maintenance *)malloc(sizeof(Maintenance)*1);
     } else {
-        // Resize the maintenance array
-        equipments->equipment[position].maintenance = (Maintenance *)realloc(equipments->equipment[position].maintenance,
-                                                        (equipments->equipment[position].num_maintenance +2) * sizeof(Maintenance));
-    }
+   }
     if (equipments->equipment[position].maintenance != NULL) {
             // Add the new maintenance record
             equipments->equipment[position].maintenance[equipments->equipment[position].num_maintenance].num_movement++;

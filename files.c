@@ -65,11 +65,8 @@ void saveEquipments(Equipments* equipments) {
     fwrite(&(equipments->count), sizeof(int), 1, fp);
 
     for (int i = 0; i < equipments->count; i++) {
-        fwrite(&(equipments->equipment[i]), sizeof(Equipment), 1, fp);
-
-        for (int j = 0; j < equipments->equipment[i].num_maintenance; j++) {
-            fwrite(&(equipments->equipment[i].maintenance[j]), sizeof(Maintenance), 1, fp);
-        }
+        fwrite(&(equipments->equipment[i]), sizeof(Equipment),  equipments->count, fp);
+        fwrite(equipments->equipment[i].maintenance, sizeof(Maintenance), equipments->equipment[i].num_maintenance, fp);
     }
     fclose(fp);
 }
